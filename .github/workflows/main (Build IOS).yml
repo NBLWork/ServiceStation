@@ -109,9 +109,9 @@ jobs:
           APPSTORE_P8: ${{ secrets.APPSTORE_P8 }}
 
           IOS_BUILD_PATH: ${{ format('{0}/build/iOS', github.workspace) }}
-          IOS_BUNDLE_ID: com.ballhiding.spot
+          IOS_BUNDLE_ID: com.axqtz.ymklp
           APP_VERSION: "1.0.1"
-          PROJECT_NAME: Ball Hiding Spot Finder
+          PROJECT_NAME: Airplane Service Station
         run: |
           eval "$(ssh-agent -s)"
           ssh-add - <<< "${MATCH_DEPLOY_KEY}"
